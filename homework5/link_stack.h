@@ -14,11 +14,9 @@ typedef struct LinkStack
 
 void init_linkstack(linkstack *s);
 bool is_empty(linkstack *s);
-void push(linkstack *s,elem_type value);
-bool pop(linkstack *s,elem_type *e);
+void push(linkstack *s,char value);
+bool pop(linkstack *s,char *e);
 void destory(linkstack *s);
 int get_val(linkstack *s,char *str);
-//int get_val(linkstack *s,char *str[],int l);
-void coverse_mid(linkstack *s,char *str1,char *str2);
-void push2(linkstack *s,char value);
-bool pop1(linkstack *s,char *e);
+void coverse_mid_to_last(linkstack *s,char *mid,char *last);
+int get_top(linkstack *s);
